@@ -19,7 +19,7 @@ It allows users to book services and admins to manage services and bookings.
 - **Frontend:** React, HTML, CSS, Bootstrap
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
-- **Other:** Git, GitHub
+- **Other:** Git,  GitHub
 
 ---
 
