@@ -23,10 +23,4 @@ It allows users to book services and admins to manage services and bookings.
 
 ---
 
-## 📦 How to Run This Project Locally
 
-### 👉 1. Clone the repository
-
-```bash
-git clone https://github.com/Asad3322/barber-shop-website.git
-cd barber-shop-website
