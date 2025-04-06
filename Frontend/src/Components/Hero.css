@@ -1,0 +1,176 @@
+:root {
+    --dark-brown: #3C2A21;
+    --medium-brown: #967259;
+    --light-brown: #D5B4A8;
+    --cream: #F4EBE4;
+    --chocolate: #1E1511;
+    --gold: #D4AF37;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.carousel-inner {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 400px;
+    background: #000;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/* Caption Styling */
+.carousel-caption {
+    bottom: 25%;
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-caption h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    color: var(--cream);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--light-brown);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Book Now Button */
+.btn-book {
+    background-color: var(--gold);
+    color: var(--chocolate);
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid var(--gold);
+}
+
+.btn-book:hover {
+    background-color: transparent;
+    color: var(--gold);
+    transform: translateY(-3px);
+}
+
+/* Carousel Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--chocolate);
+    padding: 2rem;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    bottom: 40px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: var(--cream);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+    background-color: var(--gold);
+    transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-caption {
+        bottom: 20%;
+        padding: 1.5rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .btn-book {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 50vh;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 1.5rem;
+    }
+}

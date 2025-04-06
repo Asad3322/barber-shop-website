@@ -1,0 +1,102 @@
+.login-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.btn-login {
+  background: linear-gradient(135deg, #d4af37 0%, #f2c94c 100%);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 201, 76, 0.4);
+}
+
+.forgot-password {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  float: right;
+}
+
+.forgot-password:hover {
+  color: #d4af37;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.signup-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* 🔥 Modern Login Social Buttons */
+.login-social-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-social-btn:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Platform Hover Colors */
+.login-social-btn.facebook:hover {
+  background: linear-gradient(to right, #3b5998, #8b9dc3);
+}
+
+.login-social-btn.twitter:hover {
+  background: linear-gradient(to right, #1da1f2, #0d8ddb);
+}
+
+.login-social-btn.google:hover {
+  background: linear-gradient(to right, #dd4b39, #f4a261);
+}

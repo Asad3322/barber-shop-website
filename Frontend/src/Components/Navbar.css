@@ -1,0 +1,152 @@
+:root {
+    --dark-brown: #3C2A21;
+    --medium-brown: #967259;
+    --light-brown: #D5B4A8;
+    --cream: #F4EBE4;
+    --chocolate: #1E1511;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--chocolate) !important; 
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar, .navbar-collapse {
+    background-color: var(--chocolate) !important;
+}
+
+.navbar-brand {
+    color: var(--light-brown) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand i {
+    color: var(--medium-brown);
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--light-brown) !important;
+    background-color: transparent !important;
+    padding: 0.5rem;
+}
+
+.navbar-toggler i {
+    color: var(--light-brown);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: var(--light-brown) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--cream) !important;
+}
+
+.nav-link:hover::after {
+    width: 70%;
+    background: var(--medium-brown);
+}
+
+.nav-link.active {
+    color: var(--cream) !important;
+}
+
+.nav-link.active::after {
+    width: 70%;
+    background: var(--medium-brown);
+}
+
+.btn-contact {
+    background-color: var(--medium-brown);
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem !important;
+    color: var(--cream) !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-contact:hover {
+    background-color: var(--light-brown);
+    color: var(--chocolate) !important;
+    transform: translateY(-2px);
+}
+
+.btn-contact::after {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--chocolate) !important;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 0.7rem !important;
+    }
+
+    .btn-contact {
+        margin: 0.5rem auto;
+        display: inline-block;
+    }
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    .nav-item:hover .nav-link {
+        transform: translateY(-2px);
+    }
+}
+
+/* ✅ Disable underline and hover color for Home link */
+.nav-link.no-underline::after {
+    display: none !important;
+}
+
+.nav-link.no-underline,
+.nav-link.no-underline.active,
+.nav-link.no-underline:hover {
+    color: var(--light-brown) !important;
+}
